@@ -1,0 +1,9 @@
+const variable = x => {
+  if(x === 1){
+    return x
+  }else{
+    return variable(x - 1) * x;
+  }
+}
+
+console.log(variable(5));
